@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Venture X Banner Previews</title>
+    <style>
+        body {
+            margin: 0;
+            background: #003f60;
+            color: #013d5b;
+            font-family: system-ui, sans-serif;
+        }
+
+        main {
+            max-width: 52rem;
+            margin: clamp(1rem, 4vw, 3rem) auto;
+            padding: clamp(1.5rem, 5vw, 3rem);
+            background: #ede6dc;
+            border-radius: 0 clamp(3rem, 12vw, 8rem) 0 0;
+        }
+
+        .brands {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.75rem 1.25rem;
+            padding-right: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .brands img {
+            display: block;
+            width: 8rem;
+            height: auto;
+        }
+
+        .production {
+            border-left: 2px solid #cc2427;
+            padding-left: 1rem;
+            font-size: 0.875rem;
+            font-weight: 700;
+        }
+
+        @media (max-width: 56rem) {
+            main {
+                margin-inline: 1rem;
+            }
+        }
+
+        h1 {
+            margin: 0 0 1.5rem;
+            font-size: clamp(1.75rem, 5vw, 1.7rem);
+        }
+
+        ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
+            gap: 0.75rem;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        a {
+            display: block;
+            padding: 1rem 1.25rem;
+            border: 1px solid #c2d0d6;
+            border-radius: 0.75rem;
+            background: #fff;
+            color: inherit;
+            font-weight: 650;
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus-visible {
+            background: #013d5b;
+            color: #fff;
+        }
+
+        a:focus-visible {
+            outline: 2px solid #013d5b;
+            outline-offset: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header class="brands">
+            <img class="logo"
+                src="data:image/svg+xml;base64,PHN2ZyBfbmdjb250ZW50LXdlYi1zaGVsbC1jMzU0NzIzMTM1MT0iIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtbGFiZWw9IkNhcGl0YWwgT25lIEhvbWUiIHZpZXdCb3g9IjAgMCA0MTggMTUwIiByb2xlPSJpbWciIGNsYXNzPSJzaXRlLWhlYWRlcl9fbG9nbyBuZy1zdGFyLWluc2VydGVkIj48cmVjdCBfbmdjb250ZW50LXdlYi1zaGVsbC1jMzU0NzIzMTM1MT0iIiB3aWR0aD0iNDE4IiBoZWlnaHQ9IjE1MC4wMSIgc3R5bGU9ImZpbGw6IG5vbmU7Ij48L3JlY3Q+PHBhdGggX25nY29udGVudC13ZWItc2hlbGwtYzM1NDcyMzEzNTE9IiIgZD0iTTI4My43LDEwOC41aC0uMWMtMTcuOCwxMi42LTM4LjgsMjUuOC02MS41LDM5LjdsLS45LjVhLjcuNywwLDEsMCwuOCwxLjFsLjctLjRjMTkuMy0xMCw0MS40LTIxLjksNjMuNi0zNC4ybC40LS4yQTI0LjcsMjQuNywwLDAsMSwyODMuNywxMDguNVpNNDAwLjUsMTMuOWMtMjgtMzAuOS0yMDguNi0zLjEtMjg1LjMsMTMuN2wtMS44LjRhLjguOCwwLDAsMC0uNi44LjYuNiwwLDAsMCwuOC41bDEuOC0uM0MxNzksMTcuNywzMTEuMywyLDMzOS43LDMwLjJjOC43LDguNiw2LjcsMTkuNy0zLjQsMzIuOGEyNS43LDI1LjcsMCwwLDEsMTEsMTUuOEMzODYuNiw1Mi43LDQxMywyNy43LDQwMC41LDEzLjlaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDApIiBzdHlsZT0iZmlsbDogI2NjMjQyNzsiPjwvcGF0aD48cGF0aCBfbmdjb250ZW50LXdlYi1zaGVsbC1jMzU0NzIzMTM1MT0iIiBkPSJNMjk1LjEsMTAwLjRjLjMsMTAuOSw3LjIsMTkuOCwxNi4yLDE5LjgsMTcuNCwwLDI0LjgtMjEuNCwyNC4zLTM1LjctLjQtMTAuOS03LjQtMTkuOC0xNi40LTE5LjhDMzA0LjIsNjQuNywyOTQuNSw4NiwyOTUuMSwxMDAuNFptLTkuMi0uNmMtLjctMTguNiwxMy45LTM3LjYsMzUtMzcuNiwxNC4yLDAsMjMuNCw5LjUsMjMuOSwyMy45LjcsMTkuNi0xMi45LDM3LjYtMzUsMzcuNkMyOTUuNiwxMjMuNywyODYuNCwxMTQuMywyODUuOSw5OS44WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAwKSIgc3R5bGU9ImZpbGw6ICMwMTNkNWI7Ij48L3BhdGg+PHBhdGggX25nY29udGVudC13ZWItc2hlbGwtYzM1NDcyMzEzNTE9IiIgZD0iTTg1LjUsOTQuOWExMywxMywwLDAsMS0yLjkuOEw3Niw5Ni45YTEwLjgsMTAuOCwwLDAsMC00LjYsMS40LDMuMiwzLjIsMCwwLDAtMS41LDIuMywyLjEsMi4xLDAsMCwwLDEsMi4zLDcuMyw3LjMsMCwwLDAsNC4yLjksMTYuMiwxNi4yLDAsMCwwLDQuNC0uNywxMC4yLDEwLjIsMCwwLDAsMy42LTEuOSw1LjEsNS4xLDAsMCwwLDEuNS0yLjNBMTQuNywxNC43LDAsMCwwLDg1LjUsOTQuOVptMTguNC0xMS40Yy0uMSwxLjctLjQsMy4yLS44LDUuOEwxMDAsMTA2LjdhMy4yLDMuMiwwLDAsMCwxLjcsMy42di43SDgzLjh2LTQuNGE0MC4yLDQwLjIsMCwwLDEtOC42LDMuNiwzMS44LDMxLjgsMCwwLDEtOC41LDEuMWMtNS44LDAtOS4xLS42LTExLjMtMi42cy0zLjUtMy40LTMuNC02LjNhOS42LDkuNiwwLDAsMSwyLjItNS4xLDEzLjUsMTMuNSwwLDAsMSw0LjctMy40LDI4LjksMjguOSwwLDAsMSw3LjItMmMzLjEtLjUsNy41LTEsMTMuNC0xLjVhMTUuNywxNS43LDAsMCwwLDUuOC0xLjNjMS4zLS41LDEuNy0xLDEuOS0ycy0uMi0yLjgtMi42LTMuM2MtNi40LTEuMi0xOC40LjgtMjQuNiwyLjRsMy4zLTkuMWExNjIuOCwxNjIuOCwwLDAsMSwyMy45LTJDOTkuOSw3NS4xLDEwNCw3OC44LDEwMy45LDgzLjVaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDApIiBzdHlsZT0iZmlsbDogIzAxM2Q1YjsiPjwvcGF0aD48cGF0aCBfbmdjb250ZW50LXdlYi1zaGVsbC1jMzU0NzIzMTM1MT0iIiBkPSJNMTU1LjUsMTExbDYuMi0zNC45aDE3LjFMMTcyLjYsMTExWm03LjItNDIuOWMuNS0yLjksNS01LjIsMTAuMS01LjJzOC43LDIuMyw4LjIsNS4yLTUsNS4yLTEwLjEsNS4yUzE2Mi4yLDcwLjksMTYyLjcsNjguMVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMCkiIHN0eWxlPSJmaWxsOiAjMDEzZDViOyI+PC9wYXRoPjxwYXRoIF9uZ2NvbnRlbnQtd2ViLXNoZWxsLWMzNTQ3MjMxMzUxPSIiIGQ9Ik0yMzkuMyw5NWwtMi45LjhMMjI5LjcsOTdhMTAuOCwxMC44LDAsMCwwLTQuNSwxLjQsMywzLDAsMCwwLTEuNSwyLjIsMi4yLDIuMiwwLDAsMCwuOSwyLjRjLjkuNiwyLjMuOCw0LjMuOGExNi4xLDE2LjEsMCwwLDAsNC40LS42LDEwLjIsMTAuMiwwLDAsMCwzLjYtMS45LDUuMSw1LjEsMCwwLDAsMS41LTIuM0EyMi40LDIyLjQsMCwwLDAsMjM5LjMsOTVabTE4LjQtMTEuNWMtLjEsMS43LS40LDMuMy0uOCw1LjhsLTMuMSwxNy41YTMuMiwzLjIsMCwwLDAsMS43LDMuNnYuNkgyMzcuNnYtNC41YTM2LDM2LDAsMCwxLTguNiwzLjcsMzIuMiwzMi4yLDAsMCwxLTguNiwxYy01LjcsMC05LS42LTExLjMtMi42cy0zLjQtMy40LTMuMy02LjJhOS41LDkuNSwwLDAsMSwyLjItNS4yLDEzLjMsMTMuMywwLDAsMSw0LjctMy4zLDI1LjQsMjUuNCwwLDAsMSw3LjEtMmMzLjItLjUsNy42LTEsMTMuNS0xLjVhMjQsMjQsMCwwLDAsNS44LTEuM2MxLjItLjUsMS43LTEsMS45LTJzLS4yLTIuOC0yLjYtMy4zYy02LjQtMS4zLTE4LjQuOC0yNC42LDIuM2wzLjMtOWExNjEuNywxNjEuNywwLDAsMSwyMy45LTJDMjUzLjcsNzUuMiwyNTcuOCw3OC45LDI1Ny43LDgzLjVaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDApIiBzdHlsZT0iZmlsbDogIzAxM2Q1YjsiPjwvcGF0aD48cGF0aCBfbmdjb250ZW50LXdlYi1zaGVsbC1jMzU0NzIzMTM1MT0iIiBkPSJNNDkuNiw5OC41QTYyLjMsNjIuMywwLDAsMSwzNS40LDEwMGMtOC4xLDAtMTQuNi00LTE0LjItMTEuNS4yLTQuOSw2LjEtMTUuMywyMC45LTE1LjNhMjQuMywyNC4zLDAsMCwxLDEzLjMsMy42bDIuMS0xMi4xYTQwLjMsNDAuMywwLDAsMC0xNi44LTIuOGMtMTkuNS4yLTM4LjIsOS00MC41LDI3czIwLDIyLjksMjkuOSwyMi45YzUuNywwLDExLjctLjMsMTcuMi0uOFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMCkiIHN0eWxlPSJmaWxsOiAjMDEzZDViOyI+PC9wYXRoPjxwYXRoIF9uZ2NvbnRlbnQtd2ViLXNoZWxsLWMzNTQ3MjMxMzUxPSIiIGQ9Ik0xODguMiw3NS45bDEuMi03LjFMMjA3LjIsNjVsLTEuOSwxMC45aDguOEwyMTIuNCw4M2gtOC41bC01LjEsMjhIMTgxLjVsNS4yLTI4aC02LjVsMS4zLTdoNi43WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAwKSIgc3R5bGU9ImZpbGw6ICMwMTNkNWI7Ij48L3BhdGg+PHBvbHlnb24gX25nY29udGVudC13ZWItc2hlbGwtYzM1NDcyMzEzNTE9IiIgcG9pbnRzPSIyNzUgMTExIDI1Ny42IDExMSAyNjYuNCA2Mi40IDI4My4zIDYyLjggMjc1IDExMSIgc3R5bGU9ImZpbGw6ICMwMTNkNWI7Ij48L3BvbHlnb24+PHBhdGggX25nY29udGVudC13ZWItc2hlbGwtYzM1NDcyMzEzNTE9IiIgZD0iTTEzMyw4NC4zYTEwLjQsMTAuNCwwLDAsMC02LjEsMiw5LjQsOS40LDAsMCwwLTMuMyw2Yy0uNiwzLjEtLjMsNS4yLjksNi42YTcuMSw3LjEsMCwwLDAsNS4zLDIsMTAuMiwxMC4yLDAsMCwwLDQuNC0uOSw4LjEsOC4xLDAsMCwwLDMuMy0yLjgsMTIuNSwxMi41LDAsMCwwLDEuOS00LjZjLjUtMi44LjEtNC44LTEuMi02LjJBNi43LDYuNywwLDAsMCwxMzMsODQuM1ptLTMxLjEsMzguOCw4LjMtNDYuOGgxNWwtMS4yLDZhMTQuMiwxNC4yLDAsMCwxLDYuMy00LjUsMjcsMjcsMCwwLDEsOS43LTJjMy45LDAsNi4zLjIsOS4yLDEuN2ExMi40LDEyLjQsMCwwLDEsNiw2LjYsMTYuOCwxNi44LDAsMCwxLC44LDkuNSwyMC43LDIwLjcsMCwwLDEtOC40LDEzLjdjLTQuNiwzLjMtOC43LDQuMi0xNC42LDQuMmEyMC40LDIwLjQsMCwwLDEtNS4zLS42LDEyLjEsMTIuMSwwLDAsMS0zLjQtMS4zLDE1LjUsMTUuNSwwLDAsMS0yLjgtMi42bC0yLjgsMTYuMVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMCkiIHN0eWxlPSJmaWxsOiAjMDEzZDViOyI+PC9wYXRoPjxwYXRoIF9uZ2NvbnRlbnQtd2ViLXNoZWxsLWMzNTQ3MjMxMzUxPSIiIGQ9Ik00MTEuNSw4OC42Yy0uMS0yLjgtMS41LTQuNy00LjQtNC43LTcsMC0xNC40LDEzLjctMTUuNywxOS4yQzQwMi44LDEwMy4xLDQxMS44LDk2LjMsNDExLjUsODguNlptMS41LDIxLjUsMS4zLjljLTMuNCw2LjktMTAuMywxMi41LTE4LjUsMTIuNS02LjcsMC0xMi4xLTQuNC0xMi40LTEyLjctLjYtMTUsMTMuNS0yOC45LDI0LjktMjguOSw0LjksMCw5LjUsMi4yLDkuNyw3LjUuNCwxMS45LTE2LjMsMTUuNS0yNy4zLDE1LjdhMTQuMywxNC4zLDAsMCwwLS40LDQuNGMuMiw1LDMuMiw5LjEsOS4zLDkuMVM0MTAuMywxMTQuMyw0MTMsMTEwLjFaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDApIiBzdHlsZT0iZmlsbDogIzAxM2Q1YjsiPjwvcGF0aD48cGF0aCBfbmdjb250ZW50LXdlYi1zaGVsbC1jMzU0NzIzMTM1MT0iIiBkPSJNMzQ0LjYsODguMmwzLjktLjRjMS4zLDAsMi40LjMsMi41LDEuNXMtMS4zLDYtMS42LDcuM2wtMi43LDExLjdjLTEsNC44LTIuMiw5LjgtMy4yLDEzLjhoNi44bDMuOC0xOC42YzExLjgtMTIuMiwxNi4zLTE2LjIsMTktMTYuMmEyLDIsMCwwLDEsMi4yLDIuMmMuMSwyLjEtMS4zLDctMS43LDguNGwtNCwxMy41Yy0uOCwzLjEtMS41LDUuOC0xLjQsNy44czEuOSw0LjMsNC41LDQuM2M1LDAsOC43LTUuMiwxMS44LTEwLjNsLS45LTEuN2MtMS4zLDItNC4yLDYuNS02LjYsNi41LS43LDAtMS40LS41LTEuNC0xLjdhMjAuNSwyMC41LDAsMCwxLDEtNS41TDM4MSw5NC45YzEuMS00LjQsMS43LTcuMiwxLjctOC43cy0xLjktNC4zLTQuNS00LjNjLTQuNSwwLTEwLjUsMy4zLTIzLjEsMTcuOGgtLjJsMS42LTcuMWMuOS0zLjksMS43LTcuOSwyLjUtMTAuN0ExMTQuNSwxMTQuNSwwLDAsMSwzNDQuNSw4NloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMCkiIHN0eWxlPSJmaWxsOiAjMDEzZDViOyI+PC9wYXRoPjwvc3ZnPg=="
+                alt="Capital One">
+        </header>
+        <h1>P00117703 - CapitalOne 2026 Venture x Digital Production Batch 2</h1>
+        <ul>
+            <li><a target="_blank" href="GSDM-P00117703_2026VentureX_DAB_1280x100.html">1280x100</a></li>
+            <li><a target="_blank" href="GSDM-P00117703_2026VentureX_DAB_970x250.html">970x250</a></li>
+            <li><a target="_blank" href="GSDM-P00117703_2026VentureX_DAB_970x66.html">970x66</a></li>
+            <li><a target="_blank" href="GSDM-P00117703_2026VentureX_DAB_970x90.html">970x90</a></li>
+        </ul>
+    </main>
+</body>
+
+</html>
